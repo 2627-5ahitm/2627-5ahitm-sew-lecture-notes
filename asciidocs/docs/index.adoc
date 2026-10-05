@@ -18,3 +18,57 @@ endif::backend-html5[]
 == 2026-09-22
 
 * Introduction
+
+
+== 2026-09-28
+
+* SQL
+
+** DDL CREATE; DROP, ALTER
+** DQL SELECT
+** DML INSERT, UPDATE, DELETE
+** DCL GRANT, REVOKE
+** TCL COMMIT, SAVEPOINT, ROLLBACK
+
+* JDBC
+
+Low-Level API (nicht ganz richtig)
+
+
+== 2026-10-05
+
+* IEEE
+
+** Externes Schema: Views; die Entitäten werden für die User in Views zusammengeführt
+** Konzeptuelles Schema: ERDs - datenbankunabhängige Darstellung der Entitäten und deren Beziehungen
+** Internes Schema: Tabellen, Spalten, Datentypen, Constraints, Indizes, Speicherpfade
+
+* Warum Normalisierung
+
+** Ausgehend von gedachten "Universalrelation" (Eine Tabelle die alle Daten enthält).
+** Bei dieser Tabelle würden die INSERT-, UPDATE- und DELETE-Anomalie auftreten
+** Abhilfe: Normalisierung (Zerlegen der Universalrelation in mehrere Tabellen) bis die Normalformen erfüllt sind
+
+=== Datenbankzugriff
+
+* JDBC (Low-Level API)
+
+Man verwendet SQL-Statement und bekommt ResultSet (Daten in Tabellenform) zurück.
+Die einzelnen Zeilen müssen in oo-Sprachen in Objekte umgewandelt werden.
+
+* OR-Mapper (ORM)
+
+** OR-Mapper wie JPA, EntityFramework, ... gibt bereits Objekte zurück. Dabei wird (in Java) JDBC verwendet.
+
+
+
+
+
+
+
+
+
+
+
+
+
