@@ -451,13 +451,19 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="details">
 <span id="author" class="author">Thomas Stütz</span><br>
 <span id="revnumber">version 1.0.0,</span>
-<span id="revdate">2026-09-26</span>
+<span id="revdate">2026-10-05</span>
 <br><span id="revremark">Lecture Notes for Courses at HTL Leonding</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
 <li><a href="#_2026_09_22">1. 2026-09-22</a></li>
+<li><a href="#_2026_09_28">2. 2026-09-28</a></li>
+<li><a href="#_2026_10_05">3. 2026-10-05</a>
+<ul class="sectlevel2">
+<li><a href="#_datenbankzugriff">3.1. Datenbankzugriff</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -483,11 +489,117 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_2026_09_28"><a class="anchor" href="#_2026_09_28"></a>2. 2026-09-28</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>SQL</p>
+<div class="ulist">
+<ul>
+<li>
+<p>DDL CREATE; DROP, ALTER</p>
+</li>
+<li>
+<p>DQL SELECT</p>
+</li>
+<li>
+<p>DML INSERT, UPDATE, DELETE</p>
+</li>
+<li>
+<p>DCL GRANT, REVOKE</p>
+</li>
+<li>
+<p>TCL COMMIT, SAVEPOINT, ROLLBACK</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>JDBC</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Low-Level API (nicht ganz richtig)</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_2026_10_05"><a class="anchor" href="#_2026_10_05"></a>3. 2026-10-05</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>IEEE</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Externes Schema: Views; die Entitäten werden für die User in Views zusammengeführt</p>
+</li>
+<li>
+<p>Konzeptuelles Schema: ERDs - datenbankunabhängige Darstellung der Entitäten und deren Beziehungen</p>
+</li>
+<li>
+<p>Internes Schema: Tabellen, Spalten, Datentypen, Constraints, Indizes, Speicherpfade</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Warum Normalisierung</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Ausgehend von gedachten "Universalrelation" (Eine Tabelle die alle Daten enthält).</p>
+</li>
+<li>
+<p>Bei dieser Tabelle würden die INSERT-, UPDATE- und DELETE-Anomalie auftreten</p>
+</li>
+<li>
+<p>Abhilfe: Normalisierung (Zerlegen der Universalrelation in mehrere Tabellen) bis die Normalformen erfüllt sind</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_datenbankzugriff"><a class="anchor" href="#_datenbankzugriff"></a>3.1. Datenbankzugriff</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>JDBC (Low-Level API)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Man verwendet SQL-Statement und bekommt ResultSet (Daten in Tabellenform) zurück.
+Die einzelnen Zeilen müssen in oo-Sprachen in Objekte umgewandelt werden.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>OR-Mapper (ORM)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>OR-Mapper wie JPA, EntityFramework, &#8230;&#8203; gibt bereits Objekte zurück. Dabei wird (in Java) JDBC verwendet.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
 Version 1.0.0<br>
-Last updated 2026-09-26 08:39:05 UTC
+Last updated 2026-10-05 08:16:23 UTC
 </div>
 </div>
 </body>
