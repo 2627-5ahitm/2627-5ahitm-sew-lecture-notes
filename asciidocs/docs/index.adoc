@@ -18,3 +18,16 @@ endif::backend-html5[]
 == 2026-09-22
 
 * Introduction
+
+== 2026-10-05 [Hanan Mehic]
+
+=== Datenbank-Layers
+
+image::db-schema-layers.png[]
+
+- Was versteht man unter Integration für relationale Mappings ohne Magie? (zB. Jdbi 3)
+
+=== CDI
+
+image::cdi.png[]
+
